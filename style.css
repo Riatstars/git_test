@@ -1,1 +1,286 @@
-h1{color:aqua}
+@font-face {
+  font-family: 'Pixel';
+  src: url(/asset/font/PixelifySans-VariableFont_wght.ttf) format('truetype');
+  
+}
+:root{
+ box-sizing: border-box;
+}
+*{
+  box-sizing: inherit;
+}
+body{
+  font-family: Pixel, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.background{
+  display: flex;
+  position: fixed;
+  z-index: -1;
+height: 100vh;
+width: 100vw;
+
+
+}
+.background-header{
+  display: flex;
+  position: fixed;
+  z-index: 5;
+  height: 100px;
+  width: 100vw;
+}
+.color1{
+background-color: #f14a6b;
+width: 25%;
+}
+.color2{
+  background-color: #ffd264;
+  width: 25%;
+
+}
+.color3{
+  background-color: #0ed79c;
+  width: 25%;
+
+}
+.color4{
+  background-color: #188bb0;
+  width: 25%;
+
+}
+
+/* Header section */
+header{
+  position: fixed;
+  height: 100px;
+  width: 100vw;
+  z-index: 6;
+}
+header nav{
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+header .header_item{
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #0b3e4d;
+ z-index: 7;
+}
+
+/* Main section */
+
+main{
+  border-top: 100px;
+
+}
+
+
+#home .container{
+  display: flex;
+  justify-content: center;
+  padding-top: 300px;
+  /* height: 100vh; */
+  height: calc(100vh - 100px);
+}
+#home .information{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 400px;
+  width: 400px;
+  background-color: #fff;
+  border: 10px solid #0b3e4d;
+  padding: 0 10px;
+  z-index: 1;
+}
+.information h1.name{
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.information .desc{
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.social-list{
+ margin-top: 1rem;
+ display: flex;
+ justify-content: space-between;
+}
+.social-list .social-icon{
+  display: inline-block;
+
+}
+.social-list .social-icon-img{
+  width: 50px;
+  height: 50px;
+}
+#home .my-avatar{
+  width: 466px;
+  height: 600px;
+}
+#about h1{
+  text-align: center;
+  font-size: 3rem;
+ }
+#about.section{
+  padding-top: 100px;
+  margin-top: 100PX;
+  height: 100vh;
+  background-color: white
+}
+#about .containter{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 1200px;
+  margin:0 auto;
+  padding: 50px 150px 0;
+}
+#about .upper{
+ display: flex;
+ font-size: 1.4rem;
+ 
+}
+#about .right-side{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 2rem;
+}
+#about .lower{
+  display: flex;
+  padding-top: 50px;
+  font-size: 1.4rem;
+}
+
+
+#about .computer{
+  height: 400px;
+  width: 360px;
+  ;
+}
+#about .synth{
+  height: 200px;
+  width: 466px;
+}
+
+#skills.section{
+  padding-top: 100px;
+  margin-top: 100PX;
+  height: 100vh;
+
+}
+#skills h1{
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+}
+#skills h3{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+} 
+#skills .container{
+  display: flex;
+  height: 80%;
+  margin: 0 auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+}
+#skills .box{
+  background-color: #fff;
+  border: 10px solid #0b3e4d;
+  border-radius: 2rem;
+}
+#skills .box-content{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem 0 1rem;
+  justify-content: space-around;
+
+}
+#skills .skill-icon{
+  height: 120px;
+  width: 120px;
+  margin: 0 2rem 2rem;
+}
+#skills .skill-name{
+margin: 3rem 0 0;
+text-align: center;
+font-size: 1.5rem;
+}
+
+#contact.section{
+  padding-top: 100px;
+  margin-top: 100PX;
+
+
+}
+#contact h1{
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+
+}
+#contact .contact_card{
+  height: 70vh;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding-top: 40px;
+}
+
+.contact_card input{
+  height: 3rem;
+  width: 30%;
+  line-height: 2rem;
+  padding: 0.5rem;
+  border: 10px solid #0b3e4d;
+  margin-bottom: 40px;
+  font: inherit;
+}
+
+.message-area{
+  background-color: #fff;
+  width: 30%;
+  line-height: 2rem;
+  height: 300px;
+  border: 10px solid #0b3e4d;
+  margin-bottom: 40px;
+  font: inherit;
+}
+
+
+
+.contact_card button{
+  border: none;
+  display: block;
+  background-color: #fff;
+  font: inherit;
+  width: 30%;
+  height: 3rem;
+  background-color: #0b3e4d;
+  color: #fff;
+  overflow: auto;
+}
+
+footer p{
+  margin-left: 1rem;
+}
