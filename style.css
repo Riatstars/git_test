@@ -268,5 +268,6 @@ main {
 }
 
 footer p {
+  line-height: 3rem;
   margin-left: 1rem;
 }
