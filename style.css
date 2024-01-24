@@ -1,15 +1,14 @@
 @font-face {
-  font-family: 'Pixel';
-  src: url(/asset/font/PixelifySans-VariableFont_wght.ttf) format('truetype');
-  
+  font-family: "Pixel";
+  src: url(/asset/font/PixelifySans-VariableFont_wght.ttf) format("truetype");
 }
-:root{
- box-sizing: border-box;
+:root {
+  box-sizing: border-box;
 }
-*{
+* {
   box-sizing: inherit;
 }
-body{
+body {
   font-family: Pixel, sans-serif;
   font-size: 16px;
   margin: 0;
@@ -20,80 +19,72 @@ body{
   justify-content: space-between;
 }
 
-.background{
+.background {
   display: flex;
   position: fixed;
   z-index: -1;
-height: 100vh;
-width: 100vw;
-
-
+  height: 100vh;
+  width: 100vw;
 }
-.background-header{
+.background-header {
   display: flex;
   position: fixed;
   z-index: 5;
   height: 100px;
   width: 100vw;
 }
-.color1{
-background-color: #f14a6b;
-width: 25%;
+.color1 {
+  background-color: #f14a6b;
+  width: 25%;
 }
-.color2{
+.color2 {
   background-color: #ffd264;
   width: 25%;
-
 }
-.color3{
+.color3 {
   background-color: #0ed79c;
   width: 25%;
-
 }
-.color4{
+.color4 {
   background-color: #188bb0;
   width: 25%;
-
 }
 
 /* Header section */
-header{
+header {
   position: fixed;
   height: 100px;
   width: 100vw;
   z-index: 6;
 }
-header nav{
+header nav {
   height: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-
 }
-header .header_item{
+header .header_item {
   font-size: 2.2rem;
   font-weight: 600;
   text-decoration: none;
   color: #0b3e4d;
- z-index: 7;
+  z-index: 7;
 }
 
 /* Main section */
 
-main{
+main {
   border-top: 100px;
-
 }
 
-
-#home .container{
+#home .container {
   display: flex;
   justify-content: center;
   padding-top: 300px;
   /* height: 100vh; */
   height: calc(100vh - 100px);
 }
-#home .information{
+#home .information {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -104,96 +95,94 @@ main{
   padding: 0 10px;
   z-index: 1;
 }
-.information h1.name{
+.information h1.name {
   font-size: 2.5rem;
   font-weight: 600;
 }
-.information .desc{
+.information .desc {
   font-size: 1.6rem;
   font-weight: 500;
 }
-.social-list{
- margin-top: 1rem;
- display: flex;
- justify-content: space-between;
+.social-list {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
 }
-.social-list .social-icon{
+.social-list .social-icon {
   display: inline-block;
-
 }
-.social-list .social-icon-img{
+.social-list .social-icon-img {
   width: 50px;
   height: 50px;
 }
-#home .my-avatar{
+#home .my-avatar {
   width: 466px;
   height: 600px;
 }
-#about h1{
+#about h1 {
   text-align: center;
   font-size: 3rem;
- }
-#about.section{
-  padding-top: 100px;
-  margin-top: 100PX;
-  height: 100vh;
-  background-color: white
 }
-#about .containter{
+#about.section {
+  padding-top: 100px;
+  margin-top: 100px;
+  height: 100vh;
+  background-color: white;
+}
+#about .containter {
   position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
   width: 1200px;
-  margin:0 auto;
+  margin: 0 auto;
   padding: 50px 150px 0;
+  background-color: #fff;
 }
-#about .upper{
- display: flex;
- font-size: 1.4rem;
- 
+#about .upper {
+  display: flex;
+  font-size: 1.4rem;
 }
-#about .right-side{
+#about .right-side {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   padding-left: 2rem;
 }
-#about .lower{
+#about .lower {
   display: flex;
   padding-top: 50px;
   font-size: 1.4rem;
+  padding-bottom: 90px;
 }
 
-
-#about .computer{
+#about .computer {
   height: 400px;
   width: 360px;
-  ;
 }
-#about .synth{
+#about .synth {
   height: 200px;
   width: 466px;
 }
 
-#skills.section{
+#skills .section {
   padding-top: 100px;
-  margin-top: 100PX;
-  height: 100vh;
-
+  margin-top: 100px;
+  height: 120vh;
 }
-#skills h1{
+#skills h1 {
   display: block;
   text-align: center;
   font-size: 3rem;
+  padding-top: 100px;
 }
-#skills h3{
+#skills h3 {
   text-align: center;
   font-size: 2rem;
   font-weight: 600;
   margin-top: 2rem;
-} 
-#skills .container{
+}
+#skills .container {
   display: flex;
   height: 80%;
   margin: 0 auto;
@@ -201,42 +190,39 @@ main{
   flex-wrap: wrap;
   align-content: space-evenly;
 }
-#skills .box{
+#skills .box {
   background-color: #fff;
   border: 10px solid #0b3e4d;
   border-radius: 2rem;
+  margin-top: 50px;
 }
-#skills .box-content{
+#skills .box-content {
   display: flex;
   flex-wrap: wrap;
   margin: 3rem 0 1rem;
   justify-content: space-around;
-
 }
-#skills .skill-icon{
+#skills .skill-icon {
   height: 120px;
   width: 120px;
   margin: 0 2rem 2rem;
 }
-#skills .skill-name{
-margin: 3rem 0 0;
-text-align: center;
-font-size: 1.5rem;
+#skills .skill-name {
+  margin: 3rem 0 0;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
-#contact.section{
+#contact.section {
   padding-top: 100px;
-  margin-top: 100PX;
-
-
+  margin-top: 20px;
 }
-#contact h1{
+#contact h1 {
   display: block;
   text-align: center;
   font-size: 3rem;
-
 }
-#contact .contact_card{
+#contact .contact_card {
   height: 70vh;
   width: 100%;
   margin: 0 auto;
@@ -245,9 +231,10 @@ font-size: 1.5rem;
   align-items: center;
   background-color: white;
   padding-top: 40px;
+  padding-bottom: 100px;
 }
 
-.contact_card input{
+.contact_card input {
   height: 3rem;
   width: 30%;
   line-height: 2rem;
@@ -257,7 +244,7 @@ font-size: 1.5rem;
   font: inherit;
 }
 
-.message-area{
+.message-area {
   background-color: #fff;
   width: 30%;
   line-height: 2rem;
@@ -267,20 +254,16 @@ font-size: 1.5rem;
   font: inherit;
 }
 
-
-
-.contact_card button{
+.contact_card button {
   border: none;
   display: block;
-  background-color: #fff;
   font: inherit;
   width: 30%;
-  height: 3rem;
   background-color: #0b3e4d;
   color: #fff;
-  overflow: auto;
+  padding: 20px 0;
 }
 
-footer p{
+footer p {
   margin-left: 1rem;
 }
